@@ -7,3 +7,22 @@ Content-Type: application/json
     "email": "asdf@asdf.com",
     "password": "asdffdsa"
 }
+
+
+###
+GET {{baseUrl}}/auth/3
+
+
+###
+GET {{baseUrl}}/auth?email=ad@ad.com
+
+###
+DELETE  {{baseUrl}}/auth/2
+
+###
+PATCH  {{baseUrl}}/auth/3
+Content-Type: application/json
+
+{
+    "email": "a@b.com"
+}
