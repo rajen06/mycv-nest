@@ -4,17 +4,32 @@ POST {{baseUrl}}/auth/signup
 Content-Type: application/json
 
 {
-    "email": "asdf@asdf.com",
-    "password": "asdffdsa"
+    "email": "asd@asd.com",
+    "password": "asddsa"
 }
 
+
+###
+POST {{baseUrl}}/auth/signin
+Content-Type: application/json
+
+{
+    "email": "asd@asd.com",
+    "password": "asddsa"
+}
+
+###
+GET {{baseUrl}}/auth/whoami
+
+###
+POST {{baseUrl}}/auth/signout
 
 ###
 GET {{baseUrl}}/auth/3
 
 
 ###
-GET {{baseUrl}}/auth?email=ad@ad.com
+GET {{baseUrl}}/auth?email=a@b.com
 
 ###
 DELETE  {{baseUrl}}/auth/2
@@ -26,3 +41,9 @@ Content-Type: application/json
 {
     "email": "a@b.com"
 }
+
+# ###
+# GET {{baseUrl}}/auth/colors/blue
+
+# ###
+# GET {{baseUrl}}/auth/colors
