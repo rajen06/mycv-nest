@@ -14,6 +14,7 @@ export class UsersService {
   }
 
   findOne(id: number) {
+    console.log("coming here", id);
     if (!id) {
       return null;
     }
